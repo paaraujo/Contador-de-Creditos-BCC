@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="contadordecreditosbcc.ContadorDeCreditosBCCController">
+   <children>
+      <AnchorPane layoutX="627.0" layoutY="23.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="625.0">
+         <children>
+            <Text fx:id="txtMC" layoutX="218.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matriz Curricular" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <GridPane fx:id="gridPane" alignment="CENTER" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="625.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="70.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Pane fx:id="panQ1" style="-fx-background-color: #8C7462;" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <children>
+                        <Text fx:id="txtQ1" fill="WHITE" layoutX="7.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q1" textAlignment="CENTER" wrappingWidth="49.970703125">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panQ2" style="-fx-background-color: #8C7462;" GridPane.rowIndex="1">
+                     <children>
+                        <Text fx:id="txtQ2" fill="WHITE" layoutX="7.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q2" textAlignment="CENTER" wrappingWidth="49.970703125">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panQ3" style="-fx-background-color: #8C7462;" GridPane.rowIndex="2">
+                     <children>
+                        <Text fx:id="txtQ3" fill="WHITE" layoutX="7.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q3" textAlignment="CENTER" wrappingWidth="49.970703125">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panQ4" style="-fx-background-color: #8C7462;" GridPane.rowIndex="3">
+                     <children>
+                        <Text fx:id="txtQ4" fill="WHITE" layoutX="7.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q4" textAlignment="CENTER" wrappingWidth="49.970703125">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panQ5" style="-fx-background-color: #8C7462;" GridPane.rowIndex="4">
+                     <children>
+                        <Text fx:id="txtQ5" fill="WHITE" layoutX="7.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q5" textAlignment="CENTER" wrappingWidth="49.970703125">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panQ6" style="-fx-background-color: #8C7462;" GridPane.rowIndex="5">
+                     <children>
+                        <Text fx:id="txtQ6" fill="WHITE" layoutX="7.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q6" textAlignment="CENTER" wrappingWidth="49.970703125">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panQ7" style="-fx-background-color: #8C7462;" GridPane.rowIndex="6">
+                     <children>
+                        <Text fx:id="txtQ7" fill="WHITE" layoutX="7.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q7" textAlignment="CENTER" wrappingWidth="49.970703125">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panQ8" style="-fx-background-color: #8C7462;" GridPane.rowIndex="7">
+                     <children>
+                        <Text fx:id="txtQ8" fill="WHITE" layoutX="7.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q8" textAlignment="CENTER" wrappingWidth="49.970703125">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panQ9" style="-fx-background-color: #8C7462;" GridPane.rowIndex="8">
+                     <children>
+                        <Text fx:id="txtQ9" fill="WHITE" layoutX="7.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q9" textAlignment="CENTER" wrappingWidth="49.970703125">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panQ10" style="-fx-background-color: #8C7462;" GridPane.rowIndex="9">
+                     <children>
+                        <Text fx:id="txtQ10" fill="WHITE" layoutX="7.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q10" textAlignment="CENTER" wrappingWidth="49.970703125">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panQ11" style="-fx-background-color: #8C7462;" GridPane.rowIndex="10">
+                     <children>
+                        <Text fx:id="txtQ11" fill="WHITE" layoutX="7.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q11" textAlignment="CENTER" wrappingWidth="49.970703125">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panQ12" style="-fx-background-color: #8C7462;" GridPane.rowIndex="11">
+                     <children>
+                        <Text fx:id="txtQ12" fill="WHITE" layoutX="7.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q12" textAlignment="CENTER" wrappingWidth="49.970703125">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD01" style="-fx-background-color: lightgray;" GridPane.columnIndex="1">
+                     <children>
+                        <Text fx:id="txtD01" fill="#5e5e5e" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIS0005-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD02" style="-fx-background-color: #A2D8A2;" GridPane.columnIndex="2">
+                     <children>
+                        <Text fx:id="txtD02" fill="GREEN" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BCS001-15" textAlignment="CENTER" wrappingWidth="76.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD03" style="-fx-background-color: lightgray;" GridPane.columnIndex="3">
+                     <children>
+                        <Text fx:id="txtD03" fill="#5e5e5e" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIK0102-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD04" style="-fx-background-color: lightgray;" GridPane.columnIndex="4">
+                     <children>
+                        <Text fx:id="txtD04" fill="#5e5e5e" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIS0003-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD05" style="-fx-background-color: lightgray;" GridPane.columnIndex="5">
+                     <children>
+                        <Text fx:id="txtD05" fill="#5e5e5e" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIJ0207-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD06" style="-fx-background-color: lightgray;" GridPane.columnIndex="6">
+                     <children>
+                        <Text fx:id="txtD06" fill="#5e5e5e" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIL0304-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD07" style="-fx-background-color: lightgray;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Text fx:id="txtD07" fill="#5e5e5e" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BCM0504-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD08" style="-fx-background-color: lightgray;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <Text fx:id="txtD08" fill="#5e5e5e" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BCJ0204-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD09" style="-fx-background-color: lightgray;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <children>
+                        <Text fx:id="txtD09" fill="#5e5e5e" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BCN0404-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD10" style="-fx-background-color: lightgray;" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <children>
+                        <Text fx:id="txtD10" fill="#5e5e5e" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BCN0402-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD11" style="-fx-background-color: lightgray;" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                     <children>
+                        <Text fx:id="txtD11" fill="#5e5e5e" layoutX="57.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BCL0306-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD12" style="-fx-background-color: lightgray;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Text fx:id="txtD12" fill="#5e5e5e" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BCM0505-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD13" style="-fx-background-color: lightgray;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <children>
+                        <Text fx:id="txtD13" fill="#5e5e5e" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BCJ0205-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="pan14" style="-fx-background-color: lightgray;" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                     <children>
+                        <Text fx:id="txtD14" fill="#5e5e5e" layoutX="57.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BCN0407-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD15" style="-fx-background-color: lightgray;" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                     <children>
+                        <Text fx:id="txtD15" fill="#5e5e5e" layoutX="57.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BCL0307-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD16" style="-fx-background-color: lightgray;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <Text fx:id="txtD16" fill="#5e5e5e" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BCM0506-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD17" style="-fx-background-color: lightgray;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <children>
+                        <Text fx:id="txtD17" fill="#5e5e5e" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BCJ0203-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD18" style="-fx-background-color: lightgray;" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <children>
+                        <Text fx:id="txtD18" fill="#5e5e5e" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIN0406-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD19" style="-fx-background-color: lightgray;" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                     <children>
+                        <Text fx:id="txtD19" fill="#5e5e5e" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BCN0405-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD20" style="-fx-background-color: lightgray;" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="3">
+                     <children>
+                        <Text fx:id="txtD20" fill="#5e5e5e" layoutX="57.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIR0004-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD21" style="-fx-background-color: lightgray;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <children>
+                        <Text fx:id="txtD21" fill="#5e5e5e" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BCK0103-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD22" style="-fx-background-color: lightgray;" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <children>
+                        <Text fx:id="txtD22" fill="#5e5e5e" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BCL0308-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD23" style="-fx-background-color: lightgray;" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <children>
+                        <Text fx:id="txtD23" fill="#5e5e5e" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIQ0602-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD24" style="-fx-background-color: lightgray;" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                     <children>
+                        <Text fx:id="txtD24" fill="#5e5e5e" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NHI2049-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD25" style="-fx-background-color: lightgray;" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="4">
+                     <children>
+                        <Text fx:id="txtD25" fill="#5e5e5e" layoutX="57.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTA028-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD26" style="-fx-background-color: lightgray;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <children>
+                        <Text fx:id="txtD26" fill="#5e5e5e" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BCK0104-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD27" style="-fx-background-color: lightgray;" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <children>
+                        <Text fx:id="txtD27" fill="#5e5e5e" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIR0603-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD28" style="-fx-background-color: lightgray;" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                     <children>
+                        <Text fx:id="txtD28" fill="#5e5e5e" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTA006-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD29" style="-fx-background-color: lightgray;" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                     <children>
+                        <Text fx:id="txtD29" fill="#5e5e5e" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTA001-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD30" style="-fx-background-color: lightgray;" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="5">
+                     <children>
+                        <Text fx:id="txtD30" fill="#5e5e5e" layoutX="57.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTB019-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD31" style="-fx-background-color: lightgray;" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <children>
+                        <Text fx:id="txtD31" fill="#5e5e5e" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTA024-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD32" style="-fx-background-color: lightgray;" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                     <children>
+                        <Text fx:id="txtD32" fill="#5e5e5e" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTA003-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD33" style="-fx-background-color: lightgray;" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                     <children>
+                        <Text fx:id="txtD33" fill="#5e5e5e" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTA018-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD34" style="-fx-background-color: lightgray;" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                     <children>
+                        <Text fx:id="txtD34" fill="#5e5e5e" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTB001-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD35" style="-fx-background-color: lightgray;" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="6">
+                     <children>
+                        <Text fx:id="txtD35" fill="#5e5e5e" layoutX="57.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTA009-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD36" style="-fx-background-color: lightgray;" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <children>
+                        <Text fx:id="txtD36" fill="#5e5e5e" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTA004-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD37" style="-fx-background-color: lightgray;" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                     <children>
+                        <Text fx:id="txtD37" fill="#5e5e5e" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTA002-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD38" style="-fx-background-color: lightgray;" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                     <children>
+                        <Text fx:id="txtD38" fill="#5e5e5e" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTA027-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD39" style="-fx-background-color: lightgray;" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                     <children>
+                        <Text fx:id="txtD39" fill="#5e5e5e" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTA005-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD40" style="-fx-background-color: lightgray;" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="7">
+                     <children>
+                        <Text fx:id="txtD40" fill="#5e5e5e" layoutX="57.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTAO14-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD41" style="-fx-background-color: lightgray;" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                     <children>
+                        <Text fx:id="txtD41" fill="#5e5e5e" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTA022-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD42" style="-fx-background-color: lightgray;" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                     <children>
+                        <Text fx:id="txtD42" fill="#5e5e5e" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTA026-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD43" style="-fx-background-color: lightgray;" GridPane.columnIndex="3" GridPane.rowIndex="8">
+                     <children>
+                        <Text fx:id="txtD43" fill="#5e5e5e" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTA015-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD44" style="-fx-background-color: lightgray;" GridPane.columnIndex="4" GridPane.rowIndex="8">
+                     <children>
+                        <Text fx:id="txtD44" fill="#5e5e5e" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTA010-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD45" style="-fx-background-color: lightgray;" GridPane.columnIndex="5" GridPane.rowIndex="8">
+                     <children>
+                        <Text fx:id="txtD45" fill="#5e5e5e" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BCS0002-15" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD46" style="-fx-background-color: lightgray;" GridPane.columnIndex="6" GridPane.rowIndex="8">
+                     <children>
+                        <Text fx:id="txtD46" fill="#5e5e5e" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Livre" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD47" style="-fx-background-color: lightgray;" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                     <children>
+                        <Text fx:id="txtD47" fill="#5e5e5e" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTA019-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD48" style="-fx-background-color: lightgray;" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                     <children>
+                        <Text fx:id="txtD48" fill="#5e5e5e" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTA025-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD49" style="-fx-background-color: lightgray;" GridPane.columnIndex="3" GridPane.rowIndex="9">
+                     <children>
+                        <Text fx:id="txtD49" fill="#5e5e5e" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTA007-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD50" style="-fx-background-color: lightgray;" GridPane.columnIndex="4" GridPane.rowIndex="9">
+                     <children>
+                        <Text fx:id="txtD50" fill="#5e5e5e" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTA016-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD51" style="-fx-background-color: lightgray;" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="9">
+                     <children>
+                        <Text fx:id="txtD51" fill="#5e5e5e" layoutX="57.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Limitada" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD52" style="-fx-background-color: lightgray;" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                     <children>
+                        <Text fx:id="txtD52" fill="#5e5e5e" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTA020-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD53" style="-fx-background-color: lightgray;" GridPane.columnIndex="2" GridPane.rowIndex="10">
+                     <children>
+                        <Text fx:id="txtD53" fill="#5e5e5e" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTA008-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD54" style="-fx-background-color: lightgray;" GridPane.columnIndex="3" GridPane.rowIndex="10">
+                     <children>
+                        <Text fx:id="txtD54" fill="#5e5e5e" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTA017-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD55" style="-fx-background-color: lightgray;" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="10">
+                     <children>
+                        <Text fx:id="txtD55" fill="#5e5e5e" layoutX="104.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Limitada" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD56" style="-fx-background-color: lightgray;" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                     <children>
+                        <Text fx:id="txtD56" fill="#5e5e5e" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTA021-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD57" style="-fx-background-color: lightgray;" GridPane.columnIndex="2" GridPane.rowIndex="11">
+                     <children>
+                        <Text fx:id="txtD57" fill="#5e5e5e" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MCTA023-13" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD58" style="-fx-background-color: lightgray;" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="11">
+                     <children>
+                        <Text fx:id="txtD58" fill="#5e5e5e" layoutX="57.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Limitada" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panD59" style="-fx-background-color: lightgray;" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="11">
+                     <children>
+                        <Text fx:id="txtD59" fill="#5e5e5e" layoutX="57.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Livre" textAlignment="CENTER" wrappingWidth="75.0">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="627.0" layoutY="558.0" prefHeight="214.0" prefWidth="625.0">
+         <children>
+            <ProgressIndicator fx:id="progressLIM" layoutX="344.0" layoutY="59.0" prefHeight="130.0" prefWidth="125.0" progress="0.0" />
+            <ProgressIndicator fx:id="progressOBR" layoutX="208.0" layoutY="57.0" prefHeight="130.0" prefWidth="125.0" progress="0.0" />
+            <Text layoutX="523.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Livres" />
+            <ProgressIndicator fx:id="progressLIV" layoutX="479.0" layoutY="61.0" prefHeight="130.0" prefWidth="125.0" progress="0.0" />
+            <Text layoutX="377.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Limitadas" />
+            <Text layoutX="233.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Obrigatórias" />
+            <ProgressIndicator fx:id="progressOBR1" layoutX="16.0" layoutY="27.0" prefHeight="185.0" prefWidth="175.0" progress="0.0" />
+            <Text layoutX="91.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cpk" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="15.0" layoutY="15.0" prefHeight="80.0" prefWidth="586.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite o nome ou o código da disciplina:" />
+            <TextField fx:id="txtBusca" layoutX="14.0" layoutY="38.0" prefHeight="27.0" prefWidth="485.0" />
+            <Button fx:id="btnBusca" layoutX="513.0" layoutY="38.0" mnemonicParsing="false" text="Button" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="28.0" layoutY="115.0">
+         <children>
+            <Text layoutX="423.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total de créditos: " />
+            <Text fx:id="txtOBRtotalcreditos" layoutX="535.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" text="000" />
+            <Text layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disciplinas obrigatórias" />
+            <TableView fx:id="tbvOBR" editable="true" layoutY="27.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="560.0">
+              <columns>
+                <TableColumn fx:id="tbvOBRcodigo" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="100.0" resizable="false" text="Código" />
+                <TableColumn fx:id="tbvOBRnome" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="385.0" resizable="false" text="Nome" />
+                  <TableColumn fx:id="tbvOBRcreditos" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="75.0" resizable="false" text="Créditos" />
+              </columns>
+            </TableView>
+            <Text layoutX="209.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total de disciplinas: " />
+            <Text fx:id="txtOBRtotaldisciplinas" layoutX="335.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="28.0" layoutY="345.0">
+         <children>
+            <Text layoutX="423.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total de créditos: " />
+            <Text fx:id="txtLIMtotalcreditos" layoutX="535.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" text="000" />
+            <Text layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disciplinas limitadas" />
+            <TableView fx:id="tbvOBR1" editable="true" layoutY="27.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="560.0">
+               <columns>
+                  <TableColumn fx:id="tbvOBRcodigo1" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="100.0" resizable="false" text="Código" />
+                  <TableColumn fx:id="tbvOBRnome1" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="385.0" resizable="false" text="Nome" />
+                  <TableColumn fx:id="tbvOBRcreditos1" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="75.0" resizable="false" text="Créditos" />
+               </columns>
+            </TableView>
+            <Text layoutX="209.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total de disciplinas: " />
+            <Text fx:id="txtLIMtotaldisciplinas" layoutX="335.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="28.0" layoutY="575.0">
+         <children>
+            <Text layoutX="423.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total de créditos: " />
+            <Text fx:id="txtLIVtotalcreditos" layoutX="535.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" text="000" />
+            <Text layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disciplinas livres" />
+            <TableView fx:id="tbvOBR11" editable="true" layoutY="27.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="560.0">
+               <columns>
+                  <TableColumn fx:id="tbvOBRcodigo11" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="100.0" resizable="false" text="Código" />
+                  <TableColumn fx:id="tbvOBRnome11" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="385.0" resizable="false" text="Nome" />
+                  <TableColumn fx:id="tbvOBRcreditos11" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="75.0" resizable="false" text="Créditos" />
+               </columns>
+            </TableView>
+            <Text layoutX="209.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total de disciplinas: " />
+            <Text fx:id="txtLIVtotaldisciplinas" layoutX="335.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
