@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import classes.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.canvas.*?>
@@ -701,8 +702,8 @@
       <AnchorPane layoutX="15.0" layoutY="15.0" prefHeight="80.0" prefWidth="586.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
          <children>
             <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite o nome ou o código da disciplina:" />
-            <TextField fx:id="txtBusca" layoutX="14.0" layoutY="38.0" prefHeight="27.0" prefWidth="485.0" />
             <Button fx:id="btnBusca" layoutX="513.0" layoutY="38.0" mnemonicParsing="false" text="Button" />
+            <TextField fx:id="txtBusca" layoutX="14.0" layoutY="38.0" prefHeight="27.0" prefWidth="477.0" />
          </children>
       </AnchorPane>
       <AnchorPane layoutX="28.0" layoutY="115.0">
