@@ -21,14 +21,16 @@ public class Disciplina {
     private final StringProperty    codigo;
     private final StringProperty    categoria;
     private final IntegerProperty   creditos;
+    private final IntegerProperty   id;
     
     // construtor padrão
     public Disciplina(){
-        this(null,null,0,null);
+        this(0,null,null,0,null);
     }
     
     // contrutor especificado
-    public Disciplina(String nome, String codigo, int creditos, String categoria){
+    public Disciplina(int id,String nome, String codigo, int creditos, String categoria){
+        this.id         = new SimpleIntegerProperty(id);
         this.nome       = new SimpleStringProperty(nome);
         this.codigo     = new SimpleStringProperty(codigo);
         this.categoria  = new SimpleStringProperty(categoria);
@@ -36,6 +38,16 @@ public class Disciplina {
     }
     
     // encapsulamento
+    public int getId() { 
+        return id.get();
+    }
+    public void setId(int id) { 
+        this.id.set(id);
+    }
+    public IntegerProperty idProperty(){
+        return id;
+    }
+    
     public String getNome() { 
         return nome.get();
     }
