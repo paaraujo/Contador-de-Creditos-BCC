@@ -27,18 +27,17 @@ import javafx.scene.control.ContextMenu;
 import javafx.scene.control.CustomMenuItem;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressIndicator;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Toggle;
+import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import model.Disciplina;
 
-/**
- *
- * @author pauloaraujo
- */
 public class ContadorDeCreditosBCCController implements Initializable {
     
     // campo de busca por disciplina
@@ -110,13 +109,16 @@ public class ContadorDeCreditosBCCController implements Initializable {
     @FXML private Text txtD46; @FXML private Text txtD47; @FXML private Text txtD48; @FXML private Text txtD49; @FXML private Text txtD50;
     @FXML private Text txtD51; @FXML private Text txtD52; @FXML private Text txtD53; @FXML private Text txtD54; @FXML private Text txtD55;
     @FXML private Text txtD56; @FXML private Text txtD57; @FXML private Text txtD58; @FXML private Text txtD59;    
+    
+    // radiobuttons
+    @FXML private RadioButton rdbPG; @FXML private RadioButton rdbEST; @FXML private RadioButton rdbPGEST;
         
     // variáveis globais
     private ContextMenu                 entriesPopup;
     private Disciplina                  dscEscolhida;
     private DisciplinaDAO               dscDAO;
     private ObservableList<Disciplina>  listaOBR, listaLIM, listaLIV;
-    private double                      totalOBR, totalLIM, totalLIV, totalOBRcred, totalLIMcred, totalLIVcred;
+    private double                      totalOBR, totalLIM, totalLIV, totalOBRcred, totalLIMcred, totalLIVcred, parcialLIM;
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -242,6 +244,29 @@ public class ContadorDeCreditosBCCController implements Initializable {
             );
             return row ;
         }); 
+        
+        /* radiobuttons listener */
+        parcialLIM = 30;
+        ToggleGroup group = new ToggleGroup();
+        rdbPG.setToggleGroup(group);
+        rdbEST.setToggleGroup(group);
+        rdbPGEST.setToggleGroup(group);
+        rdbPG.setSelected(true);
+        
+        group.selectedToggleProperty().addListener((ObservableValue<? extends Toggle> ov, Toggle old_toggle, Toggle new_toggle) -> {
+            if(rdbPG.isSelected()){
+                parcialLIM = 30;
+            }
+            if(rdbEST.isSelected()){
+                parcialLIM = 44;
+            }
+            if(rdbPGEST.isSelected()){
+                parcialLIM = 20;
+            }
+            populateProgressesIndicators();
+            System.out.println(new_toggle);
+            System.out.println(parcialLIM);
+       });
                       
         // método para inicializar as tabelas com os dados do banco de dados  
         populateTableFromDB();
@@ -285,6 +310,7 @@ public class ContadorDeCreditosBCCController implements Initializable {
         entriesPopup.getItems().addAll(menuItems);
     }
     
+    // método para preencher as tabelas a partir do banco de dados do usuário
     public void populateTableFromDB(){
         
         // inicializando as listas de disciplinas
@@ -310,6 +336,7 @@ public class ContadorDeCreditosBCCController implements Initializable {
                
     }
     
+    // método para calcular o total de créditos que o usuário possui
     public void calculateTotalCreditsFromDB(){
         
         // reiniciando as variáveis de contagem de créditos e disciplinas
@@ -338,7 +365,8 @@ public class ContadorDeCreditosBCCController implements Initializable {
                
     }
     
-       public void updateMatriz(){
+    // método para atualizar a matriz de disciplinas
+    public void updateMatriz(){
                    
         // reiniciando matriz
         panD01.getStyleClass().removeAll("disc-undone","disc-done"); panD01.getStyleClass().add( "disc-undone");        
@@ -469,7 +497,7 @@ public class ContadorDeCreditosBCCController implements Initializable {
                 panD01.getStyleClass().remove("disc-undone"); panD01.getStyleClass().add("disc-done"); 
                 txtD01.getStyleClass().remove("h5"); txtD01.getStyleClass().add("h6");
                 break;
-            case "BCS001-15":  
+            case "BCS0001-15":  
                 panD02.getStyleClass().remove("disc-undone"); panD02.getStyleClass().add("disc-done"); 
                 txtD02.getStyleClass().remove("h5"); txtD02.getStyleClass().add("h6");
                 break;
@@ -703,12 +731,26 @@ public class ContadorDeCreditosBCCController implements Initializable {
                
     }
     
+    // método para atualizar os indicadores de progresso
     public void populateProgressesIndicators(){
         
-        progressCPK.setProgress((totalOBRcred+totalLIMcred+totalLIVcred)/256);
+        double localLIVcred, localLIMcred;
+        if(totalLIVcred > 12){
+            localLIVcred = 12;
+        } else {
+            localLIVcred = totalLIVcred;
+        }
+        
+        if(totalLIMcred > parcialLIM){
+            localLIMcred = parcialLIM;
+        } else {
+            localLIMcred = totalLIMcred;
+        }
+        
+        progressCPK.setProgress((totalOBRcred+localLIMcred+localLIVcred)/(226+parcialLIM));
         progressOBR.setProgress(totalOBRcred/214);        
-        progressLIM.setProgress(totalLIMcred/30);
-        progressLIV.setProgress(totalLIVcred/12);
+        progressLIM.setProgress(localLIMcred/parcialLIM);
+        progressLIV.setProgress(localLIVcred/12);
         
     }
     

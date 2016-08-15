@@ -2,6 +2,38 @@
  * Empty Stylesheet file.
  */
 
-.mainFxmlClass {
+.background {
+    -fx-background-color: #ffffff;
+}   
+    
+/* button */
+.button {
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: #0082C0;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 11pt;
+    -fx-text-fill: #ffffff;
+}
 
+.button:hover {
+    -fx-background-color: rgb(0,149,203);
+}
+
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: #0071A6;
+}
+    
+/* text field */
+.text-field {
+    -fx-font-size: 11pt;
+    -fx-background-radius: 0;
+    -fx-font-family: "Segoe UI Semibold";
+}
+
+.h1{
+    -fx-font-size: 14pt;
+    -fx-font-weight: bold;
+    -fx-fill: #5e5e5e;
+    -fx-font-family: "Segoe UI Semibold";
 }

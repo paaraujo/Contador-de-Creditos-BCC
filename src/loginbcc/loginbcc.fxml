@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.paint.*?>
 <?import java.lang.*?>
 <?import java.net.*?>
@@ -8,14 +9,15 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginbcc.LoginbccController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" styleClass="background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginbcc.LoginbccController">
     <stylesheets>
         <URL value="@loginbcc.css" />
     </stylesheets>
    <children>
-      <TextField fx:id="txtLogin" layoutX="75.0" layoutY="85.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="250.0" promptText="Usuário" />
-      <PasswordField fx:id="txtSenha" layoutX="75.0" layoutY="123.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="250.0" promptText="Senha" />
-      <Button fx:id="btnEntrar" layoutX="172.0" layoutY="185.0" mnemonicParsing="false" onAction="#btnEntrarClick" text="Entrar" />
+      <TextField fx:id="txtLogin" layoutX="75.0" layoutY="104.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="250.0" promptText="Usuário" />
+      <PasswordField fx:id="txtSenha" layoutX="75.0" layoutY="142.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="250.0" promptText="Senha" />
+      <Button fx:id="btnEntrar" layoutX="168.0" layoutY="186.0" mnemonicParsing="false" onAction="#btnEntrarClick" text="Entrar" />
       <Label fx:id="lblErro" alignment="CENTER" layoutX="74.0" layoutY="158.0" prefHeight="17.0" prefWidth="250.0" textAlignment="CENTER" textFill="RED" />
+      <Text layoutX="70.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="BCC - Contador de Créditos" />
    </children>
 </AnchorPane>

@@ -11,7 +11,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" styleClass="background" stylesheets="@contadordecreditosbcc.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="contadordecreditosbcc.ContadorDeCreditosBCCController">
    <children>
-      <AnchorPane layoutX="627.0" layoutY="23.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="625.0">
+      <AnchorPane layoutX="627.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="625.0">
          <children>
             <Text fx:id="txtMC" layoutX="218.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h4" text="Matriz Curricular" textAlignment="CENTER">
                <font>
@@ -162,7 +162,7 @@
                   </Pane>
                   <Pane fx:id="panD02" GridPane.columnIndex="2">
                      <children>
-                        <Text fx:id="txtD02" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h5" text="BCS001-15" textAlignment="CENTER" wrappingWidth="76.0">
+                        <Text fx:id="txtD02" layoutX="9.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h5" text="BCS0001-15" textAlignment="CENTER" wrappingWidth="76.0">
                            <font>
                               <Font size="10.0" />
                            </font>
@@ -698,19 +698,22 @@
             <Text layoutX="86.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2" text="Geral" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="15.0" layoutY="15.0" prefHeight="80.0" prefWidth="586.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+      <AnchorPane layoutX="15.0" layoutY="6.0" prefHeight="104.0" prefWidth="586.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="6.0">
          <children>
             <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="Digite o nome ou o código da disciplina:" />
             <Button fx:id="btnAdiciona" layoutX="499.0" layoutY="38.0" mnemonicParsing="false" onAction="#addDisc" text="Adicionar" />
             <TextField fx:id="txtBusca" layoutX="14.0" layoutY="38.0" prefHeight="27.0" prefWidth="479.0" />
+            <RadioButton fx:id="rdbPG" layoutX="14.0" layoutY="72.0" mnemonicParsing="false" text="Projeto de Graduação" />
+            <RadioButton fx:id="rdbEST" layoutX="189.0" layoutY="72.0" mnemonicParsing="false" text="Estágio" />
+            <RadioButton fx:id="rdbPGEST" layoutX="274.0" layoutY="72.0" mnemonicParsing="false" text="Projeto de Graduação e Estágio" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="28.0" layoutY="115.0">
+      <AnchorPane layoutX="28.0" layoutY="125.0">
          <children>
             <Text layoutX="423.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="Total de créditos: " />
             <Text fx:id="txtOBRtotalcreditos" layoutX="535.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="000" />
             <Text layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2" text="Disciplinas obrigatórias" />
-            <TableView fx:id="tbvOBR" editable="true" layoutY="27.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="560.0">
+            <TableView fx:id="tbvOBR" editable="true" layoutY="27.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="176.0" prefWidth="560.0">
               <columns>
                 <TableColumn fx:id="tbvOBRcodigo" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="100.0" resizable="false" text="Código" />
                 <TableColumn fx:id="tbvOBRnome" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="385.0" resizable="false" text="Nome" />
@@ -721,12 +724,12 @@
             <Text fx:id="txtOBRtotaldisciplinas" layoutX="335.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="00" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="28.0" layoutY="345.0">
+      <AnchorPane layoutX="28.0" layoutY="351.0">
          <children>
             <Text layoutX="423.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="Total de créditos: " />
             <Text fx:id="txtLIMtotalcreditos" layoutX="535.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="000" />
             <Text layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2" text="Disciplinas limitadas" />
-            <TableView fx:id="tbvLIM" editable="true" layoutY="27.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="560.0">
+            <TableView fx:id="tbvLIM" editable="true" layoutY="27.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="176.0" prefWidth="560.0">
                <columns>
                   <TableColumn fx:id="tbvLIMcodigo" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="100.0" resizable="false" text="Código" />
                   <TableColumn fx:id="tbvLIMnome" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="385.0" resizable="false" text="Nome" />
@@ -737,12 +740,12 @@
             <Text fx:id="txtLIMtotaldisciplinas" layoutX="335.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="00" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="28.0" layoutY="575.0">
+      <AnchorPane layoutX="28.0" layoutY="579.0" AnchorPane.leftAnchor="28.0">
          <children>
             <Text layoutX="423.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="Total de créditos: " />
             <Text fx:id="txtLIVtotalcreditos" layoutX="535.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h3" text="000" />
             <Text layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h2" text="Disciplinas livres" />
-            <TableView fx:id="tbvLIV" editable="true" layoutY="27.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="560.0">
+            <TableView fx:id="tbvLIV" editable="true" layoutY="27.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="176.0" prefWidth="560.0">
                <columns>
                   <TableColumn fx:id="tbvLIVcodigo" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="100.0" resizable="false" text="Código" />
                   <TableColumn fx:id="tbvLIVnome" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="385.0" resizable="false" text="Nome" />
