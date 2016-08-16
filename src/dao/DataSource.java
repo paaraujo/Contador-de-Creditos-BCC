@@ -1,10 +1,7 @@
 package dao;
 
 import java.sql.*;
-/**
- *
- * @author pauloaraujo
- */
+
 public class DataSource {
     
     private String database;

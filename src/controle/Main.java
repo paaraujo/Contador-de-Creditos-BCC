@@ -1,9 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package controladores;
+package controle;
 
 import dao.DataSource;
 import javafx.application.Application;
@@ -13,10 +8,6 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author pauloaraujo
- */
 public class Main extends Application {
     
     @Override

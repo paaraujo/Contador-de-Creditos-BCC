@@ -5,7 +5,7 @@
  */
 package contadordecreditosbcc;
 
-import controladores.Acesso;
+import controle.Acesso;
 import dao.DisciplinaDAO;
 import java.net.URL;
 import java.util.ArrayList;
