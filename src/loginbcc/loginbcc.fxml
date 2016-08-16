@@ -16,8 +16,8 @@
    <children>
       <TextField fx:id="txtLogin" layoutX="75.0" layoutY="104.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="250.0" promptText="Usuário" />
       <PasswordField fx:id="txtSenha" layoutX="75.0" layoutY="142.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="250.0" promptText="Senha" />
-      <Button fx:id="btnEntrar" layoutX="168.0" layoutY="186.0" mnemonicParsing="false" onAction="#btnEntrarClick" text="Entrar" />
-      <Label fx:id="lblErro" alignment="CENTER" layoutX="74.0" layoutY="158.0" prefHeight="17.0" prefWidth="250.0" textAlignment="CENTER" textFill="RED" />
+      <Button fx:id="btnEntrar" layoutX="169.0" layoutY="205.0" mnemonicParsing="false" onAction="#btnEntrarClick" text="Entrar" />
+      <Label fx:id="lblErro" alignment="CENTER" layoutX="74.0" layoutY="178.0" prefHeight="17.0" prefWidth="250.0" textAlignment="CENTER" textFill="RED" />
       <Text layoutX="70.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="BCC - Contador de Créditos" />
    </children>
 </AnchorPane>

@@ -55,7 +55,7 @@ public class LoginbccController implements Initializable {
         
         // verificando se o usuário preencheu os campos
         if(txtLogin.getText().equals("") || txtSenha.getText().equals("") ){
-            lblErro.setText("Preencha os campos corretamenta!");
+            lblErro.setText("Preencha os campos corretamente!");
         } else {
             // verificando se a busca retornou algum usuário válido        
             if(usr != null){
